@@ -1,0 +1,18 @@
+{
+    "siteName": "Rewardrr Site",
+    "home": {
+        "topMessage": "Top Message Text",
+        "paragraph": "Paragraph Here",
+        "bannerImage": "/config/bannerImage.png",
+        "bottomBanner": "/config/bannerImage.png"
+    },
+    "about": [
+        "Here is a paragraph",
+        "Another one over here",
+        "This is the third"
+    ],
+    "faq": [
+        ["A question we get", "This is an answer to that"],
+        ["Another question we get", "Here is your answer"]
+    ]
+}
