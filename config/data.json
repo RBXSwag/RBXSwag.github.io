@@ -1,0 +1,31 @@
+{
+    "siteName": "RBX Swag",
+    "siteId": "rewardrr-exampleid",
+    "apiServer": "",
+    "payoutType": "roblox",
+    "home": {
+        "topMessage": "Top Message Text",
+        "paragraph": "Paragraph Here",
+        "bannerImage": "/config/bannerImage.png",
+        "bottomBanner": "/config/bannerImage.png"
+    },
+    "about": [
+        "Here is a paragraph",
+        "Another one over here",
+        "This is the third"
+    ],
+    "faq": [
+        ["A question we get", "This is an answer to that"],
+        ["Another question we get", "Here is your answer"]
+    ],
+    "giveaway": {
+        "requirements": 1,
+        "type": "offers|points",
+        "reward": 10
+    },
+    "invite": {
+        "enabled": true,
+        "bonusPercentage": 10
+    },
+    "pointsPrefix": "R$"
+}
