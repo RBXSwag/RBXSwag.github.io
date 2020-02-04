@@ -12,7 +12,7 @@ body {
 }
 
 /* Forms */
-input {
+input, textarea {
     margin: 3px;
     border: 1px solid #26261D;
     padding: 9px;
@@ -34,7 +34,7 @@ button:hover {
 .mainNavbar {
     width: 100%;
     background-color: #EDD630;
-    padding: 10px;
+    padding: 10px 0px 10px 0px;
     border-bottom: #26261D solid 3px;
     color: #26261D;
     display: flex;
@@ -49,6 +49,8 @@ button:hover {
     margin-right: 25px;
     text-decoration: none;
     border: solid 2px #E8BC24;
+    display: flex;
+    align-items: center;
 }
 .mainNavbar > .navItems > a {
     padding: 10px;
@@ -81,6 +83,12 @@ button:hover {
     text-decoration: none;
     color: #26261D;
 }
+.mainNavbar > .navLogo {
+    margin: 10px;
+}
+.mainNavbar > .navLogo:hover {
+    opacity: 0.7;
+}
 .mainNavbar > .navLogo > a {
     font-family: 'Sigmar One', cursive;
     text-decoration: none;
@@ -96,7 +104,7 @@ button:hover {
 #toggle:checked ~ .account {
     display: block;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 #toggle {
     display: none;
@@ -111,6 +119,9 @@ button:hover {
         padding: 10px;
         background-color: #E8BC24;
         border-radius: 10px;
+        position: absolute;
+        right: 25px;
+        top: 20px;
     }
     .mainNavbar > .navItems {
         display: none;
@@ -125,6 +136,57 @@ button:hover {
 
 
 /* Home */
+.mainHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainHome > .welcomePanel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.mainHome > .welcomePanel > img {
+    width: 500px;
+}
+.mainHome > .welcomePanel > div > button {
+    padding: 15px;
+    font-size: 30px;
+}
+.mainHome > .aboutPanels {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.mainHome > .aboutPanels > div {
+    margin: 10px;
+    background-color: white;
+    padding: 25px;
+    width: 200px;
+}
+@media (max-width: 945px) {
+    .mainHome > .welcomePanel {
+        flex-direction: column;
+    }
+    .mainHome > .welcomePanel > img {
+        width: 300px;
+    }
+    .mainHome > .welcomePanel > div > button {
+        padding: 10px;
+        font-size: 20px;
+    }
+    .mainHome > .welcomePanel > div {
+        margin-top: 25px;
+        text-align: center;
+    }
+    .mainHome > .aboutPanels {
+        flex-direction: column;
+        margin: auto;
+    }
+}
+
 
 /* Login */
 .mainLogin {
@@ -163,4 +225,114 @@ button:hover {
 }
 .mainAbout > .aboutParagraphs > div > p {
     margin: 25px;
+}
+
+/* Account */
+.accountMain > h1 {
+    margin: auto;
+    text-align: center;
+    padding-top: 25px;
+}
+.accountPanel {
+    margin: 25px 100px 10px 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.accountPanel > .profilePanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+}
+.accountPanel > .statsPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.accountPanel > .statsPanel > .stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    width: 50%;
+}
+@media (max-width: 945px) {
+    .accountPanel {
+        flex-direction: column;
+        margin: 25px 25px 10px 25px;
+    }
+    .accountPanel > .statsPanel > .stats {
+        flex-direction: column;
+    }
+}
+
+/* Promocode */
+.promocodeMain {
+    text-align: center;
+    margin: auto;
+    padding-top: 25px;
+}
+.promocodeMain > .promocodePanel {
+    background-color: white;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 30px;
+}
+.promocodeMain > .promocodePanel > .result {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+/* Earn */
+.earnMain > .statsPanel {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.earnMain > .statsPanel > div {
+    margin: 10px;
+    padding: 15px;
+    background-color: #26261D;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+.earnMain > .statsPanel > div:nth-child(1) {
+    border-left: #E45156 solid 10px;
+}
+.earnMain > .statsPanel > div:nth-child(2) {
+    border-left: #F8C45F solid 10px;
+}
+.earnMain > .statsPanel > div:nth-child(3) {
+    border-left: #69E4B5 solid 10px;
+}
+@media (max-width: 945px) {
+    .earnMain > .statsPanel {
+        flex-direction: column;
+    }
+}
+
+/* Admin Dashbard */
+.adminMain {
+    margin: 25px auto;
+    width: 90%;
+}
+.adminMain > .adminPanel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.adminMain > .adminPanel > div {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
 }
