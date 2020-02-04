@@ -2,7 +2,7 @@
     "siteName": "RBX Swag",
     "siteUrl": "rbxswag.com",
     "siteId": "rewardrr-exampleid",
-    "apiServer": "https://api.rbxswag.com/",
+    "apiServer": "https://api.rbxswag.com",
     "payoutType": "roblox",
     "home": {
         "topMessage": "Top Message Text",
