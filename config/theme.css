@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sigmar+One&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    width: 100%;
+    background-color: #EDEDED;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Forms */
+input {
+    margin: 3px;
+    border: 1px solid #26261D;
+    padding: 9px;
+    border-radius: 10px;
+}
+button {
+    margin: 3px;
+    border: none;
+    background-color: #E8BC24;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color:#EDD630;
+}
+
+/* Navbar */
+.mainNavbar {
+    width: 100vw;
+    background-color: #EDD630;
+    padding: 10px;
+    border-bottom: #26261D solid 3px;
+    color: #26261D;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainNavbar > .account {
+    background-color: #E8BC24;
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 25px;
+    text-decoration: none;
+    border: solid 2px #E8BC24;
+}
+.mainNavbar > .navItems > a {
+    padding: 10px;
+    text-decoration: none;
+    color: #26261D;
+    border-radius: 10px;
+}
+.mainNavbar > .navItems > a:hover {
+    background-color: #E8BC24;
+}
+.mainNavbar > .account > * {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.mainNavbar > .account > button {
+    background-color: #E8BC24;
+    border: solid 2px #EDD630;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.mainNavbar > .account > button:hover {
+    background-color:#EDD630;
+}
+.mainNavbar > a.account:hover {
+    background-color: #EDD630;
+}
+.mainNavbar > a.account {
+    text-decoration: none;
+    color: #26261D;
+}
+.mainNavbar > .navLogo > a {
+    font-family: 'Sigmar One', cursive;
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(114, 175, 212);
+    letter-spacing: -4px;
+}
+
+/* Home */
+
+/* Login */
+.mainLogin {
+    width: 100%;
+    margin: auto;
+    padding-top: 25px;
+}
+.mainLogin > .loginBox {
+    padding: 25px;
+    background-color: white;
+    margin: auto;
+    width: fit-content;
+    border-radius: 10px;
+}
+.mainLogin > .loginBox > form {
+    margin: 15px;
+}
+
+/* FAQ */
+.faqMain {
+    padding-top: 20px;
+    text-align: center;
+    margin: auto;
+    width: 90vw;
+}
+.faqMain > .faqList > div {
+    margin: 25px;
+}
+
+/* About */
+.mainAbout {
+    padding-top: 20px;
+    text-align: center;
+    margin: auto;
+    width: 90vw;
+}
+.mainAbout > .aboutParagraphs > div > p {
+    margin: 25px;
+}
