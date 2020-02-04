@@ -32,7 +32,7 @@ button:hover {
 
 /* Navbar */
 .mainNavbar {
-    width: 100vw;
+    width: 100%;
     background-color: #EDD630;
     padding: 10px;
     border-bottom: #26261D solid 3px;
@@ -88,6 +88,41 @@ button:hover {
     color: rgb(114, 175, 212);
     letter-spacing: -4px;
 }
+#toggle:checked ~ .navItems {
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+#toggle:checked ~ .account {
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+#toggle {
+    display: none;
+}
+.hamburger {
+    display: none;
+}
+@media (max-width: 945px) {
+    .hamburger {
+        display: block;
+        font-size: 20px;
+        padding: 10px;
+        background-color: #E8BC24;
+        border-radius: 10px;
+    }
+    .mainNavbar > .navItems {
+        display: none;
+    }
+    .mainNavbar > .account {
+        display: none;
+    }
+    .mainNavbar {
+        flex-direction: column;
+    }
+}
+
 
 /* Home */
 
