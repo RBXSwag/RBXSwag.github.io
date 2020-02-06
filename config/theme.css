@@ -10,6 +10,30 @@ body {
     background-color: #EDEDED;
     font-family: 'Open Sans', sans-serif;
 }
+a:active {
+    font-weight: bold;
+}
+/* Adblock popup */
+.noblock {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(36, 36, 29, 0.7);
+}
+.noblock > div {
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
+    padding: 25px;
+    margin: auto;
+    
+}
 
 /* Forms */
 input, textarea {
@@ -21,67 +45,69 @@ input, textarea {
 button {
     margin: 3px;
     border: none;
-    background-color: #E8BC24;
+    background-color: #24BBE8;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
 }
 button:hover {
-    background-color:#EDD630;
+    background-color:rgb(86, 197, 231);
 }
 
 /* Navbar */
 .mainNavbar {
     width: 100%;
-    background-color: #EDD630;
+    background-color: #24241D;
     padding: 10px 0px 10px 0px;
-    border-bottom: #26261D solid 3px;
-    color: #26261D;
+    border-bottom: #24BBE8 solid 3px;
+    color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 .mainNavbar > .account {
-    background-color: #E8BC24;
+    background-color: #24BBE8;
     padding: 5px;
     border-radius: 10px;
     margin-right: 25px;
     text-decoration: none;
-    border: solid 2px #E8BC24;
+    border: solid 2px #24BBE8;
     display: flex;
     align-items: center;
 }
 .mainNavbar > .navItems > a {
     padding: 10px;
     text-decoration: none;
-    color: #26261D;
+    color: white;
     border-radius: 10px;
 }
 .mainNavbar > .navItems > a:hover {
-    background-color: #E8BC24;
+    background-color: #24BBE8;
 }
 .mainNavbar > .account > * {
     display: inline-block;
     padding-left: 5px;
     padding-right: 5px;
+    color: #24241D;
 }
 .mainNavbar > .account > button {
-    background-color: #E8BC24;
-    border: solid 2px #EDD630;
+    background-color: #24BBE8;
+    border: solid 2px #24241D;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
 }
 .mainNavbar > .account > button:hover {
-    background-color:#EDD630;
+    background-color:#24241D;
+    color: white;
 }
 .mainNavbar > a.account:hover {
-    background-color: #EDD630;
+    background-color: #24241D;
 }
 .mainNavbar > a.account {
     text-decoration: none;
-    color: #26261D;
+    color: white;
 }
 .mainNavbar > .navLogo {
     margin: 10px;
@@ -90,6 +116,7 @@ button:hover {
     opacity: 0.7;
 }
 .mainNavbar > .navLogo > a {
+    display: flex;
     font-family: 'Sigmar One', cursive;
     text-decoration: none;
     font-size: 30px;
@@ -117,7 +144,7 @@ button:hover {
         display: block;
         font-size: 20px;
         padding: 10px;
-        background-color: #E8BC24;
+        background-color: #24BBE8;
         border-radius: 10px;
         position: absolute;
         right: 25px;
@@ -291,6 +318,40 @@ button:hover {
     font-weight: lighter;
 }
 
+/* Payout */
+.mainPayout {
+    text-align: center;
+    margin: auto;
+    padding-top: 25px;
+}
+.mainPayout > .promocodePanel {
+    background-color: white;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 30px;
+}
+.mainPayout > .promocodePanel > .result {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+/* Giveaway */
+.giveawayMain {
+    text-align: center;
+    margin: auto;
+    padding-top: 25px;
+}
+.giveawayMain > .giveaway {
+    background-color: white;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 30px;
+}
+.giveawayMain > .giveaway > .result {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
 /* Earn */
 .earnMain > .statsPanel {
     display: flex;
@@ -317,6 +378,8 @@ button:hover {
 @media (max-width: 945px) {
     .earnMain > .statsPanel {
         flex-direction: column;
+        font-size: 11px;
+        padding: 5px;
     }
 }
 
@@ -335,4 +398,63 @@ button:hover {
     background-color: white;
     padding: 10px;
     margin: 10px;
+}
+
+/* Daily Rewards */
+.dailyMain {
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.dailyMain > .dailyAds {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.dailyMain > .dailyAds > .ad {
+    background-color: white;
+    margin: 5px;
+    padding: 10px;
+}
+.dailyMain > .dailyPanel {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-evenly;
+}
+.dailyMain > .dailyPanel > .quests {
+    padding: 25px;
+    text-align: center;
+}
+.dailyMain > .dailyPanel > .achievements {
+    padding: 25px;
+}
+.dailyMain > .dailyPanel > div > .list {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+.dailyMain > .dailyPanel > div > .list > div {
+    padding: 5px;
+    border-top: rgb(139, 139, 134) 1px solid;
+}
+@media (max-width: 945px) {
+    .dailyMain {
+        flex-direction: column;
+    }
+    .dailyMain > .dailyPanel > .quests, .dailyMain > .dailyPanel > .achievements {
+        border: none;
+    }
+    .dailyMain > .dailyPanel {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
 }
