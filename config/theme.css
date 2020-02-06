@@ -375,11 +375,28 @@ button:hover {
 .earnMain > .statsPanel > div:nth-child(3) {
     border-left: #69E4B5 solid 10px;
 }
+.earnMain > .content {
+    padding: 10px;
+    margin: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.earnMain > .earnPanel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media (max-width: 945px) {
     .earnMain > .statsPanel {
         flex-direction: column;
         font-size: 11px;
         padding: 5px;
+    }
+    .earnMain > .content {
+        flex-direction: column;
     }
 }
 
@@ -457,4 +474,24 @@ button:hover {
         text-align: center;
         width: 100%;
     }
+}
+
+/* Cashouts */
+.cashoutsMain {
+    display: flex;
+    flex-direction: column;
+}
+.cashoutsMain > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+    padding: 5px;
+    align-items: center;
+}
+.cashoutsMain > div > .amount {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #69E4B5;
+    align-self: right;
 }
