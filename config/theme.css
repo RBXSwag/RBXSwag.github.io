@@ -462,7 +462,18 @@ button:hover {
     padding: 5px;
     border-top: rgb(139, 139, 134) 1px solid;
 }
+.earnPanel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.earnPanel > iframe {
+    width: 40%;
+}
 @media (max-width: 945px) {
+    .earnPanel > iframe {
+        width: 90%;
+    }
     .dailyMain {
         flex-direction: column;
     }
@@ -473,6 +484,9 @@ button:hover {
         flex-direction: column;
         text-align: center;
         width: 100%;
+    }
+    .earnPanel {
+        flex-direction: column;
     }
 }
 
