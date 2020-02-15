@@ -378,11 +378,14 @@ button:hover {
 .earnMain > .content {
     padding: 10px;
     margin: 25px;
-    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+.earnMain > .content > * {
+  background-color: white;
+  padding: 35px;
 }
 .earnMain > .earnPanel {
     display: flex;
