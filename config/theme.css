@@ -380,17 +380,32 @@ button:hover {
     margin: 25px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .earnMain > .content > * {
   background-color: white;
   padding: 35px;
+  margin: 30px;
 }
 .earnMain > .earnPanel {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.earnMain > .offerProviders {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.offerProviders > button {
+  font-size: 25px;
+  margin: 10px;
+  color: white;
+}
+.offerProviders > button:nth-child(4) {
+  background-color: red;
 }
 @media (max-width: 945px) {
     .earnMain > .statsPanel {
