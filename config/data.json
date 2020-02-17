@@ -1,0 +1,35 @@
+{
+    "siteName": "RBX Swag",
+    "siteUrl": "rbxswag.com",
+    "siteId": "rewardrr-exampleid",
+    "apiServer": "https://api.rbxswag.com",
+    "payoutType": "roblox",
+    "home": {
+        "topMessage": "Top Message Text",
+        "paragraph": "Paragraph Here",
+        "bannerImage": "/config/bannerImage.png",
+        "bottomBanner": "/config/bannerImage.png"
+    },
+    "about": [
+        "ROBLOX is an online virtual playground and workshop. It’s unique in that practically everything on ROBLOX is designed and constructed by members of the community. Each player starts by choosing an avatar and giving it an identity. They can then explore but are often limited by a lack of Robux. Most noobs have 0 robux, and most good players of ROBLOX use Rbxswag.com to make earn their robux.",
+        "You can probably find thousands of sites and tutorials on how to get rich on ROBLOX, but this article is essential in explaining the BEST way to get FREE ROBUX. Yes, I mean free robux. No need for generators, no need to submit your password or any of that nonsense which are fake. Rbxswag.com is a ROBLOX rewards site where users complete offers and get rewarded with free robux. Claim robux instantly after completing an offer, with no other strings attatched. This is the only legitimate way to earn ROBUX completely free. Get unlimited free ROBUX simply by downloading your favourite apps or completing surveys.",
+        "What makes Rbxswag.com unique to it's competitors is the range of features our site has, hourly giveaways, daily quests, achievements, a wide selection of offerwalls, and our continuous events. As well as a safe and friendly community. With lots of discord  members, we have a cool and wide community for all ages. Our site also distribes free robux promocodes which can usually be aquired from the YOUTUBE or DISCORD of our site. Or how about try your luck with our hourly giveaway?"
+    ],
+    "faq": [
+        ["Does RBXSwag actually work, and is it safe to use?", "Yes, here at RBXSwag we never ask for any passwords, we always stock the site with real ROBUX, and they're risk-free ROBUX! That means, you will get your ROBUX, and they are safe for you, and your ROBLOX account!"],
+        ["Why did I not get my ROBUX yet?", "Please join our Discord server, and navigate to the support section to get your questions and concerns answered. Our invite link is: https://discord.gg/rQrjR6f"],
+        ["Do you need my ROBLOX password?", "No we do not ask for your ROBLOX password at all, your account is 100% safe with us! All we need is your username and we are able to give you your ROBUX!"],
+        ["Why should I join the discord server?", "We do promocode giveaways on our Discord server, as well as ROBUX giveaways! We also use our Discord server to make announcements of new events, and new updates on RBXSwag.com. Our invite code is: https://discord.gg/rQrjR6 ."],
+        ["Business Inquiries", "For any business inquiries including YouTube sponsorships and paid promos, please email the following email address: contact@rbxswag.com . If you do not get a respond, please DM Lunky#6462, memo#9545 or Lil pepe suck#2585 on discord. You can find them at https://discord.gg/rQrjR6f ."]
+    ],
+    "giveaway": {
+        "requirements": 1,
+        "type": "offers|points",
+        "reward": 10
+    },
+    "invite": {
+        "enabled": true,
+        "bonusPercentage": 10
+    },
+    "pointsPrefix": "R$"
+}
