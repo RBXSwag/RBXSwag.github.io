@@ -1,7 +1,8 @@
 <template>
   <div class="mainPayout">
         <h1>Payout</h1>
-        <p>Minimum withdraw: 5 RBX</p><br>
+        <p>Minimum withdraw: 5 RBX</p>
+        <p>You must complete at least 2 offers before you withdraw</p><br>
         <input type="number" placeholder="Amount" v-model="withdrawAmount">
         <button :disabled="withdrawAmount < 5" @click="getGroup()">Withdraw</button>
         <div v-show="showGroup">

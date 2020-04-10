@@ -5,6 +5,7 @@
       <h2>Enter Code</h2>
       <input type="text" placeholder="Code" v-model="code">
       <button @click="redeem()">Redeem</button>
+      <p>You must complete at least one offer to redeem codes.</p>
       <p v-show="result" class="result">{{ result }}</p>
     </div>
   </div>
